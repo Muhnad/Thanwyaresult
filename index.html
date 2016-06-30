@@ -22,11 +22,13 @@
         <!--open graph meta-->        
         <meta property="og:title" content=" نتيجة الثانوية عامة 2016" />
         <meta property="og:type" content="نتيجة الثانوية" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="#" />  
-        <meta property="og:site_name" content="thanwya" />
-        
+        <meta property="og:url" content="https://thanwyaresult2016.com" />
+        <meta property="og:image" content="http://imgur.com/FGGZLKI" />  
+        <meta property="og:site_name" content="thanwyaresult2016" />
+
+        <!--Google Font-->
         <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
         <!-- CSS File -->
         <link rel="stylesheet" href="css/custom.css" />
         
@@ -38,11 +40,11 @@
         <!-- Start Header -->
         <header class="header">
             <div class="container">
-                <h1 class="header-title">
+                <h1 class="header__title">
                     دلوقتي...نتيجـة الثانوية العامة هتجيلك لحد عندك .
                 </h1>
-                <p class="header-paragraph">
-                     سجـل ايميلك ورقم جلوسك عشان توصلك نتيجتك لحد عندك.
+                <p class="header__paragraph">
+                     سجـل رقمك ورقم جلوسك عشان توصلك نتيجتك لحد عندك.
                 </p>            
             </div>
         </header>
@@ -52,41 +54,59 @@
         <div class="container">
             <!-- Start  header advertising -->
             <div class="adv-header">
-                <p class="adv-paragraph">منطقة أعلانية</p>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     data-ad-client="ca-pub-5614571925001159"
+                     data-ad-slot="2888866620"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div><!-- End advertising-header-->
             
             <!-- Start  info advertising -->
-            <div class="info adv-info">
-                <p class="adv-paragraph">منطقة أعلانية</p>
+            <div class="info info--adv">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     data-ad-client="ca-pub-5614571925001159"
+                     data-ad-slot="2888866620"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div><!-- End advertising-info-->
             
             <!-- Start student-info -->
-            <div class="info student-info">
-                <h2 class="student-info-title">
+            <div class="info info--student">
+                <h2 class="info__title">
                     سجل بياناتك لتكون اول من يحصل على النتيجة.
                 </h2>
-                <form name="student-form" class="student-form" method="post" action="finish.html">
-                    <input type="email" 
-                           name="student-email"
-                           class="student-email"
-                           placeholder="البريد الالكتروني" required>
+                <form name="student-form" class="form" method="post" action="finish.html">
+                    <input type="number" 
+                           name="student-phone"
+                           class="form__phone"
+                           placeholder="رقم الهاتف">
 
-                    <input type="text" 
+                    <input type="number" 
                            name="student-number"
-                           class="student-number"
+                           class="form__number"
                            placeholder="رقم الجلوس"  required>
 
 
                     <input type="submit" 
                            name="submit"
-                           class="submit-info"
+                           class="form__submit"
                            value="تسجيل">
                 </form>
             </div><!-- End student-info-->
 
             <!-- Start  header advertising -->
-            <div class="info adv-info">
-                <p class="adv-paragraph">منطقة أعلانية</p>
+            <div class="info info--adv">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     data-ad-client="ca-pub-5614571925001159"
+                     data-ad-slot="2888866620"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div><!-- End advertising-info-->
         </div>
         <!-- End Content area -->
@@ -99,6 +119,5 @@
             </div>
         </footer>
         <!-- End Footer -->
-        
     </body>
 </html>
