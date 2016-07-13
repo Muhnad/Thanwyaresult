@@ -1,8 +1,4 @@
-// Variables
-$white-color: #fff; // background Color
-$primary-color: #9A151A; // Color
-$font-size: 14px; // font-size
-
+@import "variables";
 
 /*************************************************************
 *
@@ -11,10 +7,10 @@ $font-size: 14px; // font-size
 **************************************************************/
 
 
-* {
+*, *:before, *:after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 .clearfix{ clear: both }
@@ -48,12 +44,13 @@ $font-size: 14px; // font-size
 body {
     width: 100%;
     height: auto;
-    font-family: 'Cairo', sans-serif;
+    font-family: $font-name;
     font-size: $font-size;
     background: $white-color;
     color: $white-color;
     line-height: 1.6;
     direction: rtl;
+    box-sizing: border-box;
 }
 
 /*Start Header*/
@@ -147,7 +144,7 @@ body {
     font-size: $font-size + 4;
 }
 
-input[type="number"] {
+.form--num {
     width: 80%;
     font-size: $font-size + 4;
     color: $primary-color;
@@ -164,15 +161,15 @@ input[type="number"] {
 .form__submit {
     display: block;
     width: 50%;
-    height: 40px;
     padding: 5px;
     margin: 10px auto;
     border: 2px solid $primary-color;
-    @include border-radius(24px);
+    @include border-radius(40px);
     background: $primary-color;
     color: $white-color;
     font-size: $font-size + 6;
     font-weight: bold;
+    font-family: $font-name;
     cursor: pointer;
     outline: none;
     &:hover,&:focus {
@@ -180,59 +177,11 @@ input[type="number"] {
     }
 }
 
-/*********************
-*
-* The finish page
-*
-**********************/
-.followus {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    h1 {
-        font-size: $font-size * 3;
-        color: $primary-color;
-        text-align: center;
-        padding: 20px 0;
-    }
-}
 
-.followus__media {
-    display: block;
-    list-style: none;
-    width: 100%;
-    height: 100px;
-    margin: 50px 0;
-    text-align: center;
-    li {
-        display: inline-block;
-        padding: 10px;
-        border: 1px solid #3B5998;
-        a {
-            text-decoration: none;
-            color: #3B5998;
-            font-size: $font-size + 4;
-        }
-    }
-}
+@import "finish";
 
 
-.home {
-    display: block;
-    text-decoration: none;
-    width: 300px;
-    height: 50px;
-    padding: 10px;
-    background: $primary-color;
-    color: $white-color;
-    font-size: $font-size + 8;
-    text-align: center;
-    margin: 10px auto;
-    border: 1px solid $primary-color;
-    @include border-radius(24px);    
-    outline: none;
-}
-
+@import "convert";
 /*****************************
 *
 * Start Footer style
@@ -271,16 +220,6 @@ input[type="number"] {
     .info--adv:nth-child(4) { width: 100% }
 
     .form__label { display: inline-block }
-    
-    /*finish page*/
-    .followus { 
-        h1 { font-size: $font-size * 2.5 }
-        li {  
-            display: block;
-            margin: 10px 0;
-        }
-    }
-    .home { width: 260px }
     
 }
 

@@ -1,0 +1,30 @@
+/*****************
+*
+* Start Conver page
+*
+******************/
+
+.form--convert {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.form__degree { width: 50% }
+.submit--convert { width: 30% }
+
+.final-degree {
+	display: none;
+	width:100%;
+	color: $primary-color;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0;
+	.final__congrats { font-size: $font-size * 4.3 - .2 }
+	.final__precent { font-size: $font-size * 2.5 }
+}
+
+@media  screen and (max-width: 530px) {
+	.form__degree { width: 100% }
+	.submit--convert { width: 50% }
+}

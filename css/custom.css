@@ -3,10 +3,10 @@
 * Global Styles
 *
 **************************************************************/
-* {
+*, *:before, *:after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 .clearfix {
@@ -42,12 +42,13 @@
 body {
   width: 100%;
   height: auto;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 14px;
   background: #fff;
   color: #fff;
   line-height: 1.6;
   direction: rtl;
+  box-sizing: border-box;
 }
 
 /*Start Header*/
@@ -136,7 +137,7 @@ body {
   font-size: 18px;
 }
 
-input[type="number"] {
+.form--num {
   width: 80%;
   font-size: 18px;
   color: #9A151A;
@@ -150,25 +151,25 @@ input[type="number"] {
   outline: none;
   cursor: pointer;
 }
-input[type="number"]:focus {
+.form--num:focus {
   border: 2px solid #9A151A;
 }
 
 .form__submit {
   display: block;
   width: 50%;
-  height: 40px;
   padding: 5px;
   margin: 10px auto;
   border: 2px solid #9A151A;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  border-radius: 24px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
   background: #9A151A;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  font-family: "Cairo", sans-serif;
   cursor: pointer;
   outline: none;
 }
@@ -204,6 +205,7 @@ input[type="number"]:focus {
 .followus__media li {
   display: inline-block;
   padding: 10px;
+  margin-right: 5px;
   border: 1px solid #3B5998;
 }
 .followus__media li a {
@@ -212,25 +214,87 @@ input[type="number"]:focus {
   font-size: 18px;
 }
 
-.home {
-  display: block;
+.nav {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-btn {
+  display: inline-block;
   text-decoration: none;
   width: 300px;
-  height: 50px;
   padding: 10px;
+  margin: 5px;
   background: #9A151A;
   color: #fff;
   font-size: 22px;
-  text-align: center;
-  margin: 10px auto;
   border: 1px solid #9A151A;
-  -webkit-border-radius: 24px;
-  -moz-border-radius: 24px;
-  -ms-border-radius: 24px;
-  border-radius: 24px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
   outline: none;
 }
 
+@media screen and (max-width: 530px) {
+  .followus h1 {
+    font-size: 35px;
+  }
+  .followus li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .nav-btn {
+    display: block;
+    width: 270px;
+    margin: 10px auto;
+  }
+}
+/*****************
+*
+* Start Conver page
+*
+******************/
+.form--convert {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form__degree {
+  width: 50%;
+}
+
+.submit--convert {
+  width: 30%;
+}
+
+.final-degree {
+  display: none;
+  width: 100%;
+  color: #9A151A;
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+.final-degree .final__congrats {
+  font-size: 60px;
+}
+.final-degree .final__precent {
+  font-size: 35px;
+}
+
+@media screen and (max-width: 530px) {
+  .form__degree {
+    width: 100%;
+  }
+
+  .submit--convert {
+    width: 50%;
+  }
+}
 /*****************************
 *
 * Start Footer style
@@ -288,19 +352,6 @@ input[type="number"]:focus {
 
   .form__label {
     display: inline-block;
-  }
-
-  /*finish page*/
-  .followus h1 {
-    font-size: 35px;
-  }
-  .followus li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .home {
-    width: 260px;
   }
 }
 /*tablets and laptops*/

@@ -12,7 +12,7 @@
         <!--meta for mobile responsive-->
         <meta name=viewport content="width=device-width, initial-scale=1" />
 
-        <title>شكرا لك ... سيتم ارسال النتيجة عند الظهور</title>
+        <title>تحويل درجتك الي نسبة مئويه </title>
         
         <!--meta description for your site-->
         <meta name="description" content="نتيجة الثانوية العامة لعام 2016 " /> 
@@ -48,32 +48,24 @@
                 </script>
             </div><!-- End advertising-header-->
             
-            <!--Start Follow us -->
-            <div class="followus">
-                <h1>سيتم ارسال النتيجة عند الظهور ....شكرا لك</h1>
-                
-                <!-- Start Social media links -->
-                <ul class="followus__media">
-                    <li>
-                        <a href="https://www.facebook.com/thanwyaresulteg2016/"
-                            target="_blink"
-                           title="تابعنا علي صفحة الفيسبوك">صفحتنا علي الفيسبوك</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/groups/271209403230097/"  
-                            target="_blink"
-                           title="تابعنا علي جروب الفيسبوك">الجروب الرسمي علي الفيسبوك</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Start convert from-->
+            <form class="form form--convert">
+                <label class="form__label">مجموع الدرجات:</label>
+                <input type="text" name="student-degree" class="form__degree form--num" placeholder="ادخل مجموع درجاتك" required>
+                <input type="submit" name="submit" value="تحويل" class="form__submit submit--convert ">
+            </form><!-- End convert from-->
+
+            <!-- Start convert degree-->
+            <div class="final-degree">
+                <h1 class="final__congrats">مبروك النجاح</h1>
+                <h3 class="final__precent"></h3>
+            </div> <!-- End convert degree-->
             
             <nav class="nav">
-                <a href="convert.html" class="nav-btn btn--convert">
-                درجتك بالنسبة المئوية</a>
                 <a href="index.html" class="nav-btn btn--home">الرئيسية</a>
             </nav>
         </div>
         
-        
+        <script src="js/custom.js"></script>
     </body>
 </html>
