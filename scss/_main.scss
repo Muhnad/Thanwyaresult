@@ -1,4 +1,3 @@
-@import "variables";
 
 /*************************************************************
 *
@@ -177,11 +176,13 @@ body {
     }
 }
 
+.fb-share{
+    width:100%;
+    height:auto;
+    padding:10px 0;
+    text-align:center
+}
 
-@import "finish";
-
-
-@import "convert";
 /*****************************
 *
 * Start Footer style
